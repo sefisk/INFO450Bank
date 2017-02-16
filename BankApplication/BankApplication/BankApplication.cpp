@@ -75,18 +75,21 @@ int main()
 				cout << "Bank Statement:" << endl << endl;
 				cout << "Beginning Balance: " << fixed << setprecision(2) << acc_balance << endl << endl;
 				cout << "Total Deposits: " << fixed << setprecision(2) << d << endl;
+				cout << " *Deposits" << endl;
 				for (int i = 0; i < d_num; i++)
 				{
 					cout << "\t" << fixed << setprecision(2) << d_s_a[i] << endl;
 				}
 				cout << endl;
 				cout << "Total Withdraws: " << fixed << setprecision(2) << w << endl;
+				cout << " *Withdraws" << endl;
 				for (int i = 0; i < w_num; i++)
 				{
 					cout << "\t" << fixed << setprecision(2) << w_s_a[i] << endl;
 				}
 				cout << endl;
 				cout << "Total Checks: " << fixed << setprecision(2) << c << endl;
+				cout << " *Checks" << endl;
 				for (int i = 0; i < c_num; i++)
 				{
 					cout << "\t" << fixed << setprecision(2) << c_s_a[i] << endl;
