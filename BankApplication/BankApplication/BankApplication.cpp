@@ -12,13 +12,13 @@ int main()
 	cout << "Enter Balance: ";
 	cin >> acc_balance;
 
-	double deposit_amount, overal_total = 0, before_balance;
-	int w = 0, d = 0, c = 0, d_num = 0, c_num = 0, w_num = 0;
+	float deposit_amount, check_amount, withdraw_amount, overal_total = 0, before_balance, w = 0, d = 0, c = 0;
+	int d_num = 0, c_num = 0, w_num = 0;
 	bool isReady = true;
 	const int MAX = 100;
-	int d_s_a[MAX] = { 0 };
-	int w_s_a[MAX] = { 0 };
-	int c_s_a[MAX] = { 0 };
+	float d_s_a[MAX] = { 0 };
+	float w_s_a[MAX] = { 0 };
+	float c_s_a[MAX] = { 0 };
 	while (isReady == true) {
 
 		cout << "1: Deposit  \t" << "2: Withdraw  \t" << "3: Check  \t" << "4: Quit  \t" << endl;
@@ -45,7 +45,6 @@ int main()
 			}
 			else if (acc_action == 2)
 			{
-				int withdraw_amount;
 				before_balance = overal_total;
 				cout << "Withdraw Amount: ";
 				cin >> withdraw_amount;
@@ -59,7 +58,7 @@ int main()
 			}
 			else if (acc_action == 3)
 			{
-				int check_amount;
+				
 				before_balance = overal_total;
 				cout << "Check Amount: ";
 				cin >> check_amount;
